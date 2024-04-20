@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "662233975093a49157540001"
+  },
+  "name": "Nikhilesh",
+  "age": 21,
+  "email": "22it3026@rgipt.ac.in"
+},
+{
+  "_id": {
+    "$oid": "662233975093a49157540003"
+  },
+  "name": "Naresh",
+  "age": 19,
+  "email": "22it3025@rgipt.ac.in"
+},
+{
+  "_id": {
+    "$oid": "662233975093a49157540004"
+  },
+  "name": "Prashant",
+  "age": 23,
+  "email": "22it3029@rgipt.ac.in"
+},
+{
+  "_id": {
+    "$oid": "662233975093a49157540005"
+  },
+  "name": "Nitesh",
+  "age": 20,
+  "email": "22it3027@rgipt.ac.in"
+},
+{
+  "_id": {
+    "$oid": "662233975093a49157540006"
+  },
+  "name": "Aman",
+  "age": 22,
+  "email": "22it3004@rgipt.ac.in"
+},
+{
+  "_id": {
+    "$oid": "662233975093a49157540007"
+  },
+  "name": "Aditya",
+  "age": 20,
+  "email": "22it3002@rgipt.ac.in"
+},
+{
+  "_id": {
+    "$oid": "662233975093a49157540008"
+  },
+  "name": "Himanshu",
+  "age": 21,
+  "email": "22it3016@rgipt.ac.in"
+},
+{
+  "_id": {
+    "$oid": "662233975093a49157540009"
+  },
+  "name": "Mahesh",
+  "age": 20,
+  "email": "22it3024@rgipt.ac.in"
+},
+{
+  "_id": {
+    "$oid": "662233975093a4915754000a"
+  },
+  "name": "Krishna",
+  "age": 20,
+  "email": "22it3021@rgipt.ac.in"
+}]

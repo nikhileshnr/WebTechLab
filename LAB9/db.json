@@ -1,0 +1,13 @@
+db.students.insertMany([
+    { "name": "Nikhilesh", "age": 21, "email": "22it3026@rgipt.ac.in" },
+    { "name": "Tanmay", "age": 19, "email": "22it3006@rgipt.ac.in" },
+    { "name": "Naresh", "age": 19, "email": "22it3025@rgipt.ac.in" },
+    { "name": "Prashant", "age": 23, "email": "22it3029@rgipt.ac.in" },
+    { "name": "Nitesh", "age": 20, "email": "22it3027@rgipt.ac.in" },
+    { "name": "Aman", "age": 22, "email": "22it3004@rgipt.ac.in" },
+    { "name": "Aditya", "age": 20, "email": "22it3002@rgipt.ac.in" },
+    { "name": "Himanshu", "age": 21, "email": "22it3016@rgipt.ac.in" },
+    { "name": "Mahesh", "age": 20, "email": "22it3024@rgipt.ac.in" },
+    { "name": "Krishna", "age": 20, "email": "22it3021@rgipt.ac.in" }
+  ])
+  
