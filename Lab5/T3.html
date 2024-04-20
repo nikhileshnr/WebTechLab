@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number List</title>
+    <style>
+        #numberList {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #numberList li {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="numberList"></ul>
+    <button onclick="addNumber()">Add Number</button>
+
+    <script>
+        let numbers = [];
+
+        function addNumber() {
+            const number = numbers.length + 1;
+            numbers.push(number);
+
+            const li = document.createElement("li");
+            li.textContent = number;
+            li.style.fontSize = (number * 2) + "px";
+
+            const numberList = document.getElementById("numberList");
+            numberList.appendChild(li);
+        }
+    </script>
+</body>
+</html>

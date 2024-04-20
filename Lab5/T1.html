@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        input {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 5px;
+            cursor: pointer;
+        }
+        @keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-animation {
+    animation: spin 2s linear infinite;
+}
+    </style>
+</head>
+<body>
+
+    <h2 id="helloHeader">Hello</h2>
+    <input type="text" id="textInput" placeholder="Type a word or phrase">
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+        function changeText() {
+            var inputText = document.getElementById("textInput").value;
+            var helloHeader = document.getElementById("helloHeader");
+
+            // Replace the old h2 with the entered word
+            helloHeader.innerText = inputText;
+
+            // Add animation class to make the word spin
+            helloHeader.classList.add("spin-animation");
+
+            // Remove the animation class after the animation completes
+            setTimeout(function() {
+                helloHeader.classList.remove("spin-animation");
+            }, 500);
+        }
+    </script>
+
+</body>
+</html>

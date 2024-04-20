@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+    <style>
+        #count {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p id="count">0</p>
+    <button onclick="incrementCount()">Click Me!</button>
+
+    <script>
+        let count = 0;
+
+        function incrementCount() {
+            count++;
+            document.getElementById("count").innerHTML = count;
+            document.getElementById("count").style.fontSize = (count * 2) + "px";
+        }
+    </script>
+</body>
+</html>

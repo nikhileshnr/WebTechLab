@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Sum</title>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="addRow()">Add Row</button>
+
+    <script>
+        function addRow() {
+            const tableBody = document.querySelector('tbody');
+            const lastRow = tableBody.lastChild; // Get the last row
+
+            // Check if at least two rows exist
+            if (lastRow && lastRow.previousSibling) {
+                const prevRow1 = lastRow.previousSibling;
+                const prevRow2 = prevRow1.previousSibling;
+
+                // Check for empty cells AND valid numbers
+                if (prevRow1.firstChild && prevRow2.firstChild &&
+                    !isNaN(parseInt(prevRow1.firstChild.innerText)) &&
+                    !isNaN(parseInt(prevRow2.firstChild.innerText))) {
+                    const num1 = parseInt(prevRow1.firstChild.innerText);
+                    const num2 = parseInt(prevRow2.firstChild.innerText);
+
+                    const sum = num1 + num2;
+
+                    // Create new row and cell
+                    const newRow = document.createElement('tr');
+                    const newCell = document.createElement('td');
+                    newCell.textContent = sum;
+
+                    // Insert new row before the last row
+                    tableBody.insertBefore(newRow, lastRow.nextSibling);
+                } else {
+                    alert("Some cells are empty or contain non-numeric values!");
+                }
+            } else {
+                alert('Need at least two rows to calculate sum!');
+            }
+        }
+    </script>
+</body>
+</html>
