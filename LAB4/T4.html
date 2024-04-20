@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Change</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        main {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        #content1 {
+            color: #333;
+        }
+
+        #content2 {
+            color: #008080;
+            font-style: italic;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #008080;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <main id="main-section">
+        <div id="content1">
+            <h1>Main Content</h1>
+            <p>This is the initial content of the main section.</p>
+        </div>
+    </main>
+
+    <button id="change-content-btn">Change Content</button>
+
+    <script>
+        document.getElementById('change-content-btn').addEventListener('click', function () {
+            var mainSection = document.getElementById('main-section');
+            var newContent = '<div id="content2"><h1>Updated Content</h1><p>This is the updated content with a different style.</p></div>';
+
+            mainSection.innerHTML = newContent;
+        });
+    </script>
+
+</body>
+</html>

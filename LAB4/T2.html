@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        #content {
+            margin-bottom: 20px;
+        }
+
+        #changeButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="content">
+        <h1 id="heading">Click the button to change the color</h1>
+        <button id="changeButton" onclick="changeColor()">Click Me</button>
+    </div>
+
+    <script>
+        function changeColor() {
+            var body = document.body;
+            var heading = document.getElementById('heading');
+            var button = document.getElementById('changeButton');
+
+            body.style.backgroundColor = "lightgreen";
+            heading.style.color = "red";
+            button.style.backgroundColor = "lightgreen";
+            heading.style.fontSize= '48pt';
+
+            heading.innerHTML = 'Color changed';
+        }
+    </script>
+</body>
+</html>

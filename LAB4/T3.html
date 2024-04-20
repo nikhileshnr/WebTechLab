@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color and Font Size Changer</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+        #content {
+            margin-bottom: 20px;
+        }
+        .custom-style {
+            background-color: #3498db;
+            color: #ffffff;
+            transition: background-color 0.5s, color 0.5s, font-size 0.5s;
+        }
+        #changeButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="content">
+        <h1 id="heading" class="custom-style">Click the button to change the color and font size</h1>
+        <button id="changeButton" onclick="changeStyle()">Change Style</button>
+    </div>
+
+    <script>
+        function changeStyle() {
+            alert("Before assigning class attribute");
+
+            var heading = document.getElementById('heading');
+            var button = document.getElementById('changeButton');
+            var randomColor = '#FA8543';
+            heading.classList.remove('custom-style');
+            heading.style.backgroundColor = randomColor;
+            heading.style.color = "black";
+            button.style.backgroundColor = randomColor;
+            heading.innerHTML = 'Color changed to ' + randomColor;
+            heading.style.fontSize = '48pt';
+            heading.classList.add('custom-style');
+            alert("After assigning class attribute");
+        }
+    </script>
+</body>
+</html>

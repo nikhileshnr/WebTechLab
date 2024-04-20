@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Heading</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #external-heading {
+            color: #333;
+            text-decoration: underline;
+        }
+
+        .color-method-1 {
+            color: #FF6347;
+        }
+
+        #external-heading-inline {
+            color: #00BFFF;
+        }
+
+        #external-heading-attribute {
+            color: #32CD32;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="external-heading" class="color-method-1">Heading Outside Main Section</h1>
+
+    <main id="main-section">
+        <div id="content1">
+            <h1>Main Content</h1>
+            <p>This is the initial content of the main section.</p>
+        </div>
+    </main>
+
+    <h1 id="external-heading-inline" style="color: #8A2BE2;">Heading with Inline Style</h1>
+
+    <h1 id="external-heading-attribute">Heading with Inline Style Attribute</h1>
+
+</body>
+</html>

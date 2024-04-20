@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .grid-container
+        {
+            display: grid;
+            grid-template-columns: repeat(5,150px) ;
+            gap: 0px 0px;
+        }
+        .child
+        {
+            text-align: center;
+            border: 0.5px solid lightgrey;
+            width: auto;
+            height: auto;
+            font-size: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 700;
+        }
+        .child>img
+        {
+            height: 40px;
+        }
+        .gray
+        {
+            background-color: #d9d9d9;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="child"><img src="./chrome.png"> </div>
+      <div class="child"><img src="./explorer.png"> </div>
+      <div class="child"> <img src="./firefox.png"></div>
+      <div class="child"> <img src="./opera.png"> </div>
+      <div class="child"><img src="./safari.png"> </div>
+      <div class="child gray"><p>120.0</p></div>
+      <div class="child gray"><p>120.0</p></div>
+      <div class="child gray"><p>122.0</p></div>
+      <div class="child gray"><p>106.0</p></div>
+      <div class="child gray"><p>17.4</p></div>
+    </div>
+  </body>
+</html>
